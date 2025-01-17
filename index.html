@@ -64,9 +64,21 @@
 
         </div>
         <button class="btn">Buy now</button>
-
     </div>
-    <script></script>
+    </div>
+    <script>
+        function increment() {
+            const quantityElement = document.getElementById("quantity");
+            const quantity = parseInt(quantityElement.innerText);
+            quantityElement.innerText = quantity + 1;
+        }
+
+        function decrement() {
+            const quantityElement = document.getElementById("quantity");
+            const quantity = parseInt(quantityElement.innerText);
+            quantityElement.innerText = quantity - 1;
+        }
+    </script>
 </body>
 
 </html>
